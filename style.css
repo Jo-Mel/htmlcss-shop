@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    margin: 10px auto;
+}
+
+ .box {
+     display: inline-block;
+     background-color: lightgrey;
+     width: 300px;
+     height: 400px;
+     position: relative;
+ }
+
+ .box img {
+     /* Senza questo il box si sposta verso il basso */
+     display: block;
+     margin: 48px auto;
+ }
+
+.green {
+    display: inline-block;
+    background-color: green;
+    color: snow;
+    width: 40px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+}
+
+.red {
+    display: inline-block;
+    color: snow;
+    background-color: red;
+    width: 40px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    position: absolute;
+    right: 0
+}
+
+.row {
+    margin-top: 10px;
+}
+
+.heart {
+    position:absolute;
+    left: 5px;
+    bottom: 5px;
+    font-size: 35px;
+    display: none;
+}
+
+.box:hover .heart {
+    display:block;
+}
+
+.box:hover .green, .box:hover .red {
+    font-size: 20px;
+}
